@@ -1,0 +1,20 @@
+{
+  "short_name": "Budgeter",
+  "name": "Budgeter",
+  "icons": [
+    {
+      "src": "icon/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#666",
+  "background_color": "#666"
+}
