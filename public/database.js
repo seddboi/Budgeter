@@ -7,8 +7,8 @@ budgetRequest.onerror = () => {
 };
 
 budgetRequest.onupgradeneeded = (event) => {
-    database = event.target.result;
-
+    const database = event.target.result;
+''
     database.createObjectStore('pending', {autoIncrement:true});
 };
 
@@ -41,8 +41,8 @@ function getData() {
                 method:'POST', 
                 body: JSON.stringify(gatherData.result),
                 headers: {
-                    Accept: 'application/json , text/plain', 'Content-Type': 'application/json' 
-                },
+                    Accept: 'application/json , text/plain, */*', 'Content-Type': 'application/json' 
+                }
             }).then( (response) => {
                 response.json();
 
@@ -56,3 +56,4 @@ function getData() {
     }
 };
 
+window.addEventListener("online", getData);
