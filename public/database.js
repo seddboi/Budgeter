@@ -1,4 +1,4 @@
-const database;
+let database;
 
 const budgetRequest = indexedDB.open('budget', 1);
 
