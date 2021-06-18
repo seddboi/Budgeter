@@ -2,13 +2,15 @@ const CACHE_NAME = 'static-cache-v2';
 const DATA_CACHE_NAME = 'data-cache-v1';
 
 const FILES_TO_CACHE = [
+    "/icons/icon-144x144.png",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png",
+    "/favicon.ico",
     "/",
     "/index.html",
     "/index.js",
     "/manifest.webmanifest",
-    "/db.js",
+    "/database.js",
     "/styles.css",
 ];
 
