@@ -6,6 +6,7 @@ budgetRequest.onerror = () => {
     console.log('Please try again!')
 };
 
+
 budgetRequest.onupgradeneeded = (event) => {
     const database = event.target.result;
 ''
